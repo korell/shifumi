@@ -5,8 +5,10 @@ import {GameContextProvider} from "./context/GameContext.tsx";
 function App() {
     return (
         <GameContextProvider>
-            <Counter/>
-            <GameArea/>
+            <div className="Game">
+                <Counter/>
+                <GameArea/>
+            </div>
         </GameContextProvider>
     )
 }

@@ -21,6 +21,7 @@
         margin-right: auto;
         margin-top: 3rem;
         max-width: 100%;
+        gap: 3rem;
 
         button {
             appearance: none;
@@ -31,7 +32,7 @@
             transition: transform 150ms;
 
             img {
-                width: 10rem;
+                width: 7rem;
                 height: auto;
             }
 
@@ -39,5 +40,35 @@
                 transform: scale(1.2);
             }
         }
+    }
+
+    &-main {
+        margin-top: 5rem;
+    }
+
+    &-round_wrapper {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr auto 1fr;
+
+        img {
+            width: 20rem;
+        }
+
+        .Choice {
+
+        }
+
+        .ChoiceSeparator {
+            img {
+                width: 3rem;
+            }
+        }
+    }
+
+    &-round_result {
+        font-size: 5rem;
+        grid-column: span 3;
+        font-weight: bold;
     }
 }

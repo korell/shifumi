@@ -1,0 +1,28 @@
+.Counter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background-color: dimgrey;
+
+    &-item {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 1rem 3rem;
+        width: 50%;
+        flex-shrink: 0;
+        height: 3rem;
+        overflow: hidden;
+        font-size: 2rem;
+        color: white;
+        font-weight: bold;
+        background-image: linear-gradient(var(--direction, to right),red calc(var(--score) * 20%), transparent calc(var(--score) * 20%));
+
+        &:last-child {
+            justify-content: flex-end;
+            --direction: to left
+        }
+    }
+}
